@@ -3,7 +3,7 @@
 	// Montréal Rubber Metro
 		window.SubwayBuilderAPI.trains.modifyTrainType('heavy-metro', {
 		name: 'MPM-10 Azur',
-		description: 'Can only be used underground because of the weather.',
+		description: 'Can only be used underground because of the weather. Newer Montréal Metro with open-gangway construction.',
 		stats: {
 			maxSpeed: 20.1,             // m/s (≈72 kph)
 			maxAcceleration: 1.21,
@@ -32,7 +32,7 @@
 			trainWidth: 2.52,
 			minStationLength: 156,
 			maxStationLength: 160,
-			carCost: 1_343_301,
+			carCost: 1_350_000,
 			baseTrackCost: 28_750,
 			baseStationCost: 62_300_000,
 			trainOperationalCostPerHour: 220,
@@ -41,18 +41,78 @@
 			stationMaintenanceCostPerYear: 235_000,
 			tphLimit: 38,
 		},
-			elevationMultipliers: {
-				DEEP_BORE: 3.5,
-				STANDARD_TUNNEL: 1.8,
-				CUT_AND_COVER: 1,
-				AT_GRADE: 100,
-				ELEVATED: 100,
-				TRENCHED: 100,
-				RAMP: 100
+		elevationMultipliers: {
+			DEEP_BORE: 3.5,
+			STANDARD_TUNNEL: 1.8,
+			CUT_AND_COVER: 1,
+			AT_GRADE: 100,
+			ELEVATED: 100,
+			TRENCHED: 100,
+			RAMP: 100
 		},
+		compatibleTrackTypes: ['heavy-metro', 'mr73'],
 		appearance: {color: '#009EE0', bodyColor: '#00A3E0', couplerWidthMultiplier: 2 },
 		portalCost: 500_000_000_000,
 		rampCost: 500_000_000_000,
+		maxOverpassSpan: 5,
+	});
+	window.SubwayBuilderAPI.trains.registerTrainType({
+		id: 'mr73',
+		name: 'MR-73',
+		description: 'Can only be used underground because of the weather. The oldest metro used in Montreal, refurbished in 2006.',
+		stats: {
+			maxSpeed: 20.1,             // m/s (≈72 kph)
+			maxAcceleration: 1.43,
+			accelerationCurve: { a0: 1.43, a1: 1.1, v1: 8.5, v2: 14, exponent: 1.7},
+			maxDeceleration: 1.35,
+			maxLateralAcceleration: 0.9,
+			maxCantMm: 160,
+			maxCantDeficiencyMm: 135,
+			maxSlopePercentage: 6.5,
+			maxSpeedLocalStation: 13.88, // m/s (≈50 kph)
+			crossoverSpeed: 6.95,        // m/s (≈25 kph)
+			yardSpeedLimit: 6.95,        // m/s (≈25 kph)
+			stopTimeSeconds: 20,
+			turnaroundTimeSeconds: 80,
+			minTurnRadius: 52,
+			minStationTurnRadius: 200,
+			parallelTrackSpacing: 3.1,
+			trackClearance: 1.53,
+			minCars: 6,
+			maxCars: 9,
+			carsPerCarSet: 3,
+			capacityPerCar: 160,
+			seatsPerCar: 34,
+			doorsPerCarPerSide: 4,
+			carLength: 16,
+			trainWidth: 2.5,
+			minStationLength: 156,
+			maxStationLength: 160,
+			carCost: 1_010_000,
+			baseTrackCost: 28_750,
+			baseStationCost: 62_300_000,
+			trainOperationalCostPerHour: 250,
+			carOperationalCostPerHour: 38,
+			trackMaintenanceCostPerMeter: 200,
+			stationMaintenanceCostPerYear: 235_000,
+			tphLimit: 30,
+		},
+		elevationMultipliers: {
+			DEEP_BORE: 3.5,
+			STANDARD_TUNNEL: 1.8,
+			CUT_AND_COVER: 1,
+			AT_GRADE: 100,
+			ELEVATED: 100,
+			TRENCHED: 100,
+			RAMP: 100
+		},
+		compatibleTrackTypes: ['mr73', 'heavy-metro'],
+		appearance: {color: '#009EE0', roofStyle: 'boxy', bodyColor: '#00A3E0'},
+		portalCost: 500_000_000_000,
+		rampCost: 500_000_000_000,
+		maxOverpassSpan: 5,
+	});
+	
 	window.SubwayBuilderAPI.trains.modifyTrainType('light-metro', {
 		name: 'Métropolis Saint-Laurent',
 		stats: {
