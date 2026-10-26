@@ -26,4 +26,4 @@ Light Metro is not changed because it's already the basegame vehicle (just chang
 
 |Name|Replace base game vehicle|Description|Top Speed (km/h)|Capacity per carriage|Carriage per consist|
 |-|-|-|-|-|-|
-|Citadis|Tram|||||
+|Citadis|LRT|||||
