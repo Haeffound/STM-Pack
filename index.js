@@ -55,7 +55,7 @@
 		portalCost: 500_000_000_000,
 		rampCost: 500_000_000_000,
 		maxOverpassSpan: 5,
-	});
+});
 	window.SubwayBuilderAPI.trains.registerTrainType({
 		id: 'mr73',
 		name: 'MR-73',
@@ -111,13 +111,13 @@
 		portalCost: 500_000_000_000,
 		rampCost: 500_000_000_000,
 		maxOverpassSpan: 5,
-	});
-	
+});
 	window.SubwayBuilderAPI.trains.modifyTrainType('light-metro', {
 		name: 'Métropolis Saint-Laurent',
 		stats: {
-			maxSpeedLocalStation: 33.33, // m/s (≈100 kph)
-	});
+			maxSpeedLocalStation: 27.78   , // m/s
+	},
+});
 	/// EXO Trains
 	window.SubwayBuilderAPI.trains.modifyTrainType('commuter-rail', {
 		name: 'ALP-45DP+MultiLevel',
@@ -166,11 +166,11 @@
 		name: 'EC-43+Multilevel',
 		description: 'Siemens Charger Diesel Locomotive with MultiLevel cars',
 		stats: {
-			maxSpeed: 35.76,              // m/s (≈130 kph)
+			maxSpeed: 35.76,              // m/s (≈128 kph)
 			maxAcceleration: 0.5,
 			accelerationCurve: { a0: 0.6, a1: 0.49, v1: 6.5, v2: 15, exponent: 1.7},
 			maxDeceleration: 1.34,
-			maxSpeedLocalStation: 35.76, // m/s (≈130 kph)
+			maxSpeedLocalStation: 35.76, // m/s (≈128 kph)
 			crossoverSpeed: 6.95,        // m/s (≈25 kph)
 			yardSpeedLimit: 6.95,        // m/s (≈25 kph)
 			stopTimeSeconds: 50,
@@ -205,53 +205,31 @@
 			minor: 23,
 		},
 	});
-		window.SubwayBuilderAPI.trains.modifyTrainType('light-rail', {
-		name: 'Citadis X05',
-		description: 'A modern tram designed for intensive urban operations.Shares road space with traffic, subject to road speed limits and intersection signals.',
+	window.SubwayBuilderAPI.trains.modifyTrainType('light-rail', {
+		name: 'Citadis Spirit',
+		description: 'Modern Light Rail vehicle from Alstom for the North American market.',
+	appearance: {roofStyle: 'boxy', bodyColor: '#AEB0AD', couplerWidthMultiplier: 1.5, catenary: true},
+	portalCost: 8_000_000,
+	rampCost: 3_000_000,
+	});
+	window.SubwayBuilderAPI.trains.modifyTrainType('light-rail', {
+		name: 'Flexity Freedom',
+		description: 'Streetcar from Bombardier/Alstom. Shares road space with traffic, subject to road speed limits and intersection signals.',
 		stats: {
-			maxSpeed: 19.44,             // m/s (≈70 kph)
-			maxAcceleration: 1.3,
-			accelerationCurve: { a0: 1.3, a1: 1.3, v1: 8.3, v2: 13.9, exponent: 3},
-			maxDeceleration: 1.5,
-			maxLateralAcceleration: 0.8,
-			maxSpeedLocalStation: 19.44, // m/s (≈70 kph)
-			stopTimeSeconds: 20,
-			turnaroundTimeSeconds: 60,
-			minTurnRadius: 18,
-			minStationTurnRadius: 35,
-			parallelTrackSpacing: 2.8,
-			trackClearance: 0.5,
 			minCars: 5,
 			maxCars: 7,
-			carsPerCarSet: 1,
 			capacityPerCar: 45,
 			seatsPerCar: 12,
 			doorsPerCarPerSide: 1,
 			carLength: 6.3,
-			trainWidth: 2.64,
 			minStationLength: 36,
 			maxStationLength: 50,
-			carCost: 800_000,
-			baseTrackCost: 15_000,
-			baseStationCost: 2_000_000,
-			trainOperationalCostPerHour: 120,
 			carOperationalCostPerHour: 9,
-			trackMaintenanceCostPerMeter: 240,
-			stationMaintenanceCostPerYear: 40_000,
-			tphLimit: 30,
 		},
-		appearance: {roofStyle: 'rounded', bodyColor: '#AEB0AD', couplerWidthMultiplier: 2, catenary: true},
-		portalCost: 4_000_000,
-		rampCost: 2_000_000,
+		appearance: {roofStyle: 'rounded', bodyColor: '#AEB0AD', couplerWidthMultiplier: 1.5, catenary: true},
+		portalCost: 6_000_000,
+		rampCost: 2_750_000,
 		gradeCrossingSpeedLimitApproachDistance: 50,
-		allowAtGradeRoadCrossing: true,
-		allowGradeCrossing: true,
-		gradeCrossingBaseCost: 150000,
-		gradeCrossingMaintenancePerDay: 2500,
-		gradeCrossingTphLimit: {
-			highway: null,
-			major: 20,
-			medium: 20,
-			minor: 30
+		maxOverpassSpan: 50,
 	});
 })();
