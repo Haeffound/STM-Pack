@@ -1,5 +1,3 @@
-[README.md](https://github.com/user-attachments/files/33966487/README.md)
-
 # Subway Builder Montréal STM Train Pack
 
 Subway Builder STM-Pack is a mod for the game Subway Builder that adds trains from the Montréal Metropolis. This pack change base-game vehicles only.
