@@ -212,7 +212,7 @@
 	portalCost: 8_000_000,
 	rampCost: 3_000_000,
 	});
-	window.SubwayBuilderAPI.trains.modifyTrainType('light-rail', {
+	window.SubwayBuilderAPI.trains.modifyTrainType('tram', {
 		name: 'Flexity Freedom',
 		description: 'Streetcar from Bombardier/Alstom. Shares road space with traffic, subject to road speed limits and intersection signals.',
 		stats: {
