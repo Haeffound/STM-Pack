@@ -2,7 +2,7 @@
 (function () {
 	// Montréal Rubber Metro
 		window.SubwayBuilderAPI.trains.modifyTrainType('heavy-metro', {
-		name: 'MPM-10 Azur',
+		name: 'MPM-10 Azure',
 		description: 'Only used underground because of the snow. Newer Montréal Metro with open-gangway construction.',
 		stats: {
 			maxSpeed: 20.1,              // m/s (≈72 kph)
