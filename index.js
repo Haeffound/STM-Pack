@@ -3,9 +3,9 @@
 	// Montréal Rubber Metro
 		window.SubwayBuilderAPI.trains.modifyTrainType('heavy-metro', {
 		name: 'MPM-10 Azur',
-		description: 'Can only be used underground because of the weather. Newer Montréal Metro with open-gangway construction.',
+		description: 'Only used underground because of the snow. Newer Montréal Metro with open-gangway construction.',
 		stats: {
-			maxSpeed: 20.1,             // m/s (≈72 kph)
+			maxSpeed: 20.1,              // m/s (≈72 kph)
 			maxAcceleration: 1.21,
 			accelerationCurve: { a0: 1.21, a1: 1.15, v1: 11, v2: 20, exponent: 1.6},
 			maxDeceleration: 1.23,
@@ -59,9 +59,9 @@
 	window.SubwayBuilderAPI.trains.registerTrainType({
 		id: 'mr73',
 		name: 'MR-73',
-		description: 'Can only be used underground because of the weather. The oldest metro used in Montreal, refurbished in 2006.',
+		description: 'Only used underground because of the snow. The oldest metro used in Montreal, refurbished in 2006.',
 		stats: {
-			maxSpeed: 20.1,             // m/s (≈72 kph)
+			maxSpeed: 20.1,              // m/s (≈72 kph)
 			maxAcceleration: 1.43,
 			accelerationCurve: { a0: 1.43, a1: 1.1, v1: 8.5, v2: 14, exponent: 1.7},
 			maxDeceleration: 1.35,
@@ -115,7 +115,7 @@
 	window.SubwayBuilderAPI.trains.modifyTrainType('light-metro', {
 		name: 'Métropolis Saint-Laurent',
 		stats: {
-			maxSpeedLocalStation: 27.78   , // m/s
+			maxSpeedLocalStation: 27.78, // m/s
 	},
 });
 	/// EXO Trains
@@ -123,7 +123,7 @@
 		name: 'ALP-45DP+MultiLevel',
 		description: 'Dual-mode electric and diesel locomotive with MultiLevel cars',
 		stats: {
-			maxSpeed: 44.44,              // m/s (≈160 kph)
+			maxSpeed: 44.44,             // m/s (≈160 kph)
 			maxAcceleration: 0.76,
 			accelerationCurve: { a0: 0.85, a1: 0.8, v1: 15, v2: 17.8, exponent: 1.4},
 			maxDeceleration: 0.8,
