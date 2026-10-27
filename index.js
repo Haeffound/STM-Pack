@@ -166,7 +166,7 @@
 		name: 'EC-43+Multilevel',
 		description: 'Siemens Charger Diesel Locomotive with MultiLevel cars',
 		stats: {
-			maxSpeed: 35.76,              // m/s (≈128 kph)
+			maxSpeed: 35.76,             // m/s (≈128 kph)
 			maxAcceleration: 0.5,
 			accelerationCurve: { a0: 0.6, a1: 0.49, v1: 6.5, v2: 15, exponent: 1.7},
 			maxDeceleration: 1.34,
@@ -208,22 +208,38 @@
 	window.SubwayBuilderAPI.trains.modifyTrainType('light-rail', {
 		name: 'Citadis Spirit',
 		description: 'Modern Light Rail vehicle from Alstom for the North American market.',
-	appearance: {roofStyle: 'boxy', bodyColor: '#AEB0AD', couplerWidthMultiplier: 1.5, catenary: true},
+		stats: {
+			maxSpeed: 29.17,             // m/s (≈100 kph)
+			minTurnRadius: 25,
+			minCars: 4,
+			maxCars: 8,
+			carsPerCarSet: 4,
+			capacityPerCar: 85,
+			seatsPerCar: 30,
+			doorsPerCarPerSide: 2,
+			carLength: 12.22,
+			minStationLength: 52,
+			maxStationLength: 104,
+		},
+	appearance: {bodyColor: '#AEB0AD'},
 	portalCost: 8_000_000,
 	rampCost: 3_000_000,
 	});
 	window.SubwayBuilderAPI.trains.modifyTrainType('tram', {
 		name: 'Flexity Freedom',
-		description: 'Streetcar from Bombardier/Alstom. Shares road space with traffic, subject to road speed limits and intersection signals.',
+		description: 'Streetcar from Bombardier/Alstom, optimised for urban operations. Shares road space with traffic, subject to road speed limits and intersection signals.',
 		stats: {
+			maxSpeed: 22.22,             // m/s (≈80 kph)
+			maxSlopePercentage: 6,
 			minCars: 5,
-			maxCars: 7,
+			maxCars: 10,
+			carsPerCarSet: 5,
 			capacityPerCar: 45,
 			seatsPerCar: 12,
 			doorsPerCarPerSide: 1,
 			carLength: 6.3,
 			minStationLength: 36,
-			maxStationLength: 50,
+			maxStationLength: 72,
 			carOperationalCostPerHour: 9,
 		},
 		appearance: {roofStyle: 'rounded', bodyColor: '#AEB0AD', couplerWidthMultiplier: 1.5, catenary: true},
