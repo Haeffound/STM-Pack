@@ -59,7 +59,7 @@
 	window.SubwayBuilderAPI.trains.registerTrainType({
 		id: 'mr73',
 		name: 'MR-73',
-		description: 'Only used underground because of the snow. The oldest metro used in Montreal, refurbished in 2006.',
+		description: 'Only used underground because of the snow. The oldest metro still used in Montreal, refurbished in 2006.',
 		stats: {
 			maxSpeed: 20.1,              // m/s (≈72 kph)
 			maxAcceleration: 1.43,
