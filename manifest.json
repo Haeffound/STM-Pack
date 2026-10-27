@@ -1,7 +1,7 @@
 {
-    "id": "com.haeffound.stmpack",
+    "id": "stm-pack",
     "name": "STM Train Pack",
-    "description": "This pack contains various material for Montréal by updating the basegame vehicles. You will find, Metro on rubber tyres (MPM-10 Azur; Heavy-Metro), REM is already in the game as Light Metro, Trains for EXO Commuter (ALP-45DP as bi-mode; Electric Commuter – and Siemens Charger EC-43; Diesel Commuter; both with Multilevel cars), trams (Citadis; LRT) for Montréal Tram plan or Tram de l'Est.",
+    "description": "This pack contains various material for Montréal by updating the basegame vehicles. You will find, Metro on rubber tyres (MPM-10 Azur; Heavy-Metro – MR-73), REM is already in the game as Light Metro, Trains for EXO Commuter (ALP-45DP as bi-mode; Electric Commuter – and Siemens Charger EC-43; Diesel Commuter; both with Multilevel cars), trams (Citadis Spirit; LRT – Flexity Freedom ; Tram) for Montréal Tram plan or Tram de l'Est.",
     "version": "1.0.0",
     "author": {
         "name": "Haeffound"
