@@ -6,14 +6,14 @@ This pack also is fully compatible with all the current Beta feature (accelerati
 
 Light Metro is not changed because it's already the basegame vehicle (just changed the name).
 
-#### Métro (3)
 Only use underground for MPM-10 and MR-73 because of the snow. They are compatible with each others tracks. You won't be able to construct them above -4, don't try, the blueprint won't be buildable.
-Light Metro has not this limitation.
+
+#### Métro (3)
 
 |Name|Replace base game vehicle|Description|Top Speed (km/h)|Capacity per carriage|Carriage per consist|
 |-|-|-|-|-|-|
 |MPM-10 Azure|Heavy-Metro|Newer Montréal Metro with open-gangway construction|72|173|9|
-|MR-73|No|The oldest metro still used in Montreal, refurbished in 2006|72|160|6–9|
+|MR-73|None|The oldest metro still used in Montreal, refurbished in 2006|72|160|6–9|
 |Métropolis Saint-Laurent|Light-Metro|Alstom Metropolis for the REM|100|200|2–4|
 
 #### Commuter trains (2)
