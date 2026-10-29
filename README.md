@@ -12,7 +12,6 @@ Only use underground for MPM-10 and MR-73 because of the snow. They are compatib
 
 <table>
 <tr><th>Name</th><th>Replace base game vehicle</th><th>Description</th><th>Top Speed (km/h)</th><th>Capacity per carriage</th><th>Carriage per consist</th><th></th></tr>
-<tr><th>-</th><th>-</th><th>-</th><th>-</th><th>-</th><th>-</th><th></th></tr>
 <tr><th>MPM-10 Azure</th><th>Heavy-Metro</th><th>Newer Montréal Metro with open-gangway construction</th><th>72</th><th>173</th><th>9</th><th></th></tr>
 <tr><th>MR-73</th><th>None</th><th>The oldest metro still used in Montreal, refurbished in 2006</th><th>72</th><th>160</th><th>6–9</th><th></th></tr>
 <tr><th>Métropolis Saint-Laurent</th><th>Light-Metro</th><th>Alstom Metropolis for the REM</th><th>100</th><th>200</th><th>2–4</th><th></th></tr>
@@ -23,7 +22,6 @@ Only use underground for MPM-10 and MR-73 because of the snow. They are compatib
 
 <table>
 <tr><th>Name</th><th>Replace base game vehicle</th><th>Description</th><th>Top Speed (km/h)</th><th>Capacity per carriage</th><th>Carriage per consist</th><th></th></tr>
-<tr><th>-</th><th>-</th><th>-</th><th>-</th><th>-</th><th>-</th><th></th></tr>
 <tr><th>ALP-45DP+MultiLevel</th><th>Commuter</th><th>Dual-mode locomotives (Diesel and Electric) and dual-floor cars</th><th>160</th><th>180</th><th>3 to 12</th><th></th></tr>
 <tr><th>EC-43+MultiLevel</th><th>Diesel Commuter</th><th>Siemens Charger with dual-floor cars</th><th>128</th><th>180</th><th>3 to 12</th><th></th></tr>
 
@@ -33,7 +31,6 @@ Only use underground for MPM-10 and MR-73 because of the snow. They are compatib
 
 <table>
 <tr><th>Name</th><th>Replace base game vehicle</th><th>Description</th><th>Top Speed (km/h)</th><th>Capacity per carriage</th><th>Carriage per consist</th><th></th></tr>
-<tr><th>-</th><th>-</th><th>-</th><th>-</th><th>-</th><th>-</th><th></th></tr>
 <tr><th>Citadis Spirit</th><th>LRT</th><th>Modern Light Rail vehicle from Alstom for the North American market</th><th>105</th><th>85</th><th>4–8</th><th></th></tr>
 <tr><th>Flexity Freedom</th><th>Tram</th><th>Streetcar from Bombardier/Alstom, optimised for urban operations</th><th>80</th><th>45</th><th>5–10</th><th></th></tr>
 
