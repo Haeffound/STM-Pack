@@ -7,8 +7,8 @@ This pack also is fully compatible with all the current Beta feature (accelerati
 Light Metro is not changed because it's already the basegame vehicle (just changed the name).
 
 #### Métro (3)
-Only use underground because of the snow the MPM-10 and MR-73. They are compatible with each others tracks.
-You won't be able to construct them above -4, don't try. Light Metro has not this limitation.
+Only use underground for MPM-10 and MR-73 because of the snow. They are compatible with each others tracks. You won't be able to construct them above -4, don't try, the blueprint won't be buildable.
+Light Metro has not this limitation.
 
 |Name|Replace base game vehicle|Description|Top Speed (km/h)|Capacity per carriage|Carriage per consist|
 |-|-|-|-|-|-|
