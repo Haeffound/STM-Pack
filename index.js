@@ -42,15 +42,6 @@
             stationMaintenanceCostPerYear: 235000,
             tphLimit: 38,
         },
-        elevationMultipliers: {
-            DEEP_BORE: 3.5,
-            STANDARD_TUNNEL: 1.8,
-            CUT_AND_COVER: 1,
-            AT_GRADE: 100,
-            ELEVATED: 100,
-            TRENCHED: 100,
-            RAMP: 100
-        },
         compatibleTrackTypes: ['heavy-metro', 'mr73'],
         appearance: {
             color: '#009EE0',
@@ -102,15 +93,6 @@
             trackMaintenanceCostPerMeter: 200,
             stationMaintenanceCostPerYear: 235000,
             tphLimit: 30,
-        },
-        elevationMultipliers: {
-            DEEP_BORE: 3.5,
-            STANDARD_TUNNEL: 1.8,
-            CUT_AND_COVER: 1,
-            AT_GRADE: 100,
-            ELEVATED: 100,
-            TRENCHED: 100,
-            RAMP: 100
         },
         compatibleTrackTypes: ['mr73', 'heavy-metro'],
         appearance: {
