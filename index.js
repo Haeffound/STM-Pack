@@ -1,5 +1,4 @@
-
- // STM Train Pack
+// STM Train Pack
 (function () {
     // Montréal Rubber Metro
     window.SubwayBuilderAPI.trains.modifyTrainType('heavy-metro', {
@@ -34,25 +33,20 @@
             minStationLength: 156,
             maxStationLength: 160,
             carCost: 1350000,
-            baseTrackCost: 28750,
-            baseStationCost: 62300000,
+            baseTrackCost: 28_750,
+            baseStationCost: 62_300_000,
             trainOperationalCostPerHour: 220,
             carOperationalCostPerHour: 32.5,
             trackMaintenanceCostPerMeter: 200,
-            stationMaintenanceCostPerYear: 235000,
+            stationMaintenanceCostPerYear: 235_000,
             tphLimit: 38,
         },
         compatibleTrackTypes: ['heavy-metro', 'mr73'],
-        appearance: {
-            color: '#009EE0',
-            bodyColor: '#00A3E0',
-            couplerWidthMultiplier: 2
-        },
-        portalCost: 500000000000,
-        rampCost: 500000000000,
+        appearance: {color: '#009EE0', bodyColor: '#00A3E0', couplerWidthMultiplier: 2},
+        portalCost: 500_000_000_000,
+        rampCost: 500_000_000_000,
         maxOverpassSpan: 5,
     });
-
     window.SubwayBuilderAPI.trains.registerTrainType({
         id: 'mr73',
         name: 'MR-73',
@@ -85,23 +79,19 @@
             trainWidth: 2.5,
             minStationLength: 156,
             maxStationLength: 160,
-            carCost: 1010000,
-            baseTrackCost: 28750,
-            baseStationCost: 62300000,
+            carCost: 1_010_000,
+            baseTrackCost: 28_750,
+            baseStationCost: 62_300_000,
             trainOperationalCostPerHour: 250,
             carOperationalCostPerHour: 38,
             trackMaintenanceCostPerMeter: 200,
-            stationMaintenanceCostPerYear: 235000,
+            stationMaintenanceCostPerYear: 235_000,
             tphLimit: 30,
         },
         compatibleTrackTypes: ['mr73', 'heavy-metro'],
-        appearance: {
-            color: '#009EE0',
-            roofStyle: 'boxy',
-            bodyColor: '#00A3E0'
-        },
-        portalCost: 500000000000,
-        rampCost: 500000000000,
+        appearance: {color: '#009EE0', roofStyle: 'boxy', bodyColor: '#00A3E0'},
+        portalCost: 500_000_000_000,
+        rampCost: 500_000_000_000,
         maxOverpassSpan: 5,
     });
 
@@ -111,7 +101,6 @@
             maxSpeedLocalStation: 27.78,
         },
     });
-
     // EXO Trains
     window.SubwayBuilderAPI.trains.modifyTrainType('commuter-rail', {
         name: 'ALP-45DP+MultiLevel',
@@ -119,7 +108,7 @@
         stats: {
             maxSpeed: 44.44,
             maxAcceleration: 0.76,
-            accelerationCurve: { a0: 0.85, a1: 0.8, v1: 15, v2: 17.8, exponent: 1.4 },
+            accelerationCurve: { a0: 1.01, a1: 1.01, v1: 15.57, v2: 20, exponent: 1.4 },
             maxDeceleration: 0.8,
             maxSpeedLocalStation: 44.44,
             crossoverSpeed: 6.95,
@@ -138,12 +127,12 @@
             trainWidth: 3.05,
             minStationLength: 108,
             maxStationLength: 315,
-            carCost: 4000000,
-            baseStationCost: 50000000,
+            carCost: 4_000_000,
+            baseStationCost: 50_000_000,
             trainOperationalCostPerHour: 680,
             carOperationalCostPerHour: 45,
             trackMaintenanceCostPerMeter: 300,
-            stationMaintenanceCostPerYear: 280000,
+            stationMaintenanceCostPerYear: 280_000,
             tphLimit: 23,
         },
         compatibleTrackTypes: ['commuter-rail', 'commuter-rail-diesel'],
@@ -153,22 +142,14 @@
             couplerWidthMultiplier: 1.5,
             catenary: true
         },
-        allowGradeCrossing: true,
-        gradeCrossingTphLimit: {
-            highway: null,
-            major: 8,
-            medium: 12,
-            minor: 23,
-        },
     });
-
     window.SubwayBuilderAPI.trains.modifyTrainType('commuter-rail-diesel', {
         name: 'EC-43+Multilevel',
         description: 'Siemens Charger Diesel Locomotive with MultiLevel cars',
         stats: {
             maxSpeed: 35.76,
             maxAcceleration: 0.5,
-            accelerationCurve: { a0: 0.6, a1: 0.49, v1: 6.5, v2: 15, exponent: 1.7 },
+            accelerationCurve: { a0: 0.494, a1: 0.494, v1: 10.7, v2: 20, exponent: 1.7 },
             maxDeceleration: 1.34,
             maxSpeedLocalStation: 35.76,
             crossoverSpeed: 6.95,
@@ -180,36 +161,24 @@
             minCars: 3,
             maxCars: 12,
             carsPerCarSet: 3,
-            capacityPerCar: 180,
+            capacityPerCar: 200,
             seatsPerCar: 132,
             doorsPerCarPerSide: 2,
-            carLength: 25.91,
+            carLength: 25.9,
             trainWidth: 3.05,
             minStationLength: 108,
             maxStationLength: 315,
-            carCost: 3300000,
-            baseStationCost: 45000000,
+            carCost: 3_300_000,
+            baseStationCost: 45_000_000,
             trainOperationalCostPerHour: 650,
             carOperationalCostPerHour: 45,
             trackMaintenanceCostPerMeter: 220,
-            stationMaintenanceCostPerYear: 260000,
+            stationMaintenanceCostPerYear: 260_000,
             tphLimit: 23,
         },
         compatibleTrackTypes: ['commuter-rail-diesel', 'commuter-rail'],
-        appearance: {
-            roofStyle: 'boxy',
-            bodyColor: '#FFFFFF',
-            couplerWidthMultiplier: 1.5
-        },
-        allowGradeCrossing: true,
-        gradeCrossingTphLimit: {
-            highway: null,
-            major: 8,
-            medium: 12,
-            minor: 23,
-        },
+        appearance: {roofStyle: 'boxy', bodyColor: '#FFFFFF', couplerWidthMultiplier: 1.5 },
     });
-
     window.SubwayBuilderAPI.trains.modifyTrainType('light-rail', {
         name: 'Citadis Spirit',
         description: 'Modern Light Rail vehicle from Alstom for the North American market.',
@@ -226,11 +195,10 @@
             minStationLength: 52,
             maxStationLength: 104,
         },
-        appearance: { bodyColor: '#AEB0AD' },
-        portalCost: 8000000,
-        rampCost: 3000000,
+        appearance: {bodyColor: '#AEB0AD'},
+        portalCost: 8_000_000,
+        rampCost: 3_000_000,
     });
-
     window.SubwayBuilderAPI.trains.modifyTrainType('tram', {
         name: 'Flexity Freedom',
         description: 'Streetcar from Bombardier/Alstom, optimised for urban operations. Shares road space with traffic, subject to road speed limits and intersection signals.',
@@ -248,19 +216,13 @@
             maxStationLength: 72,
             carOperationalCostPerHour: 9,
         },
-        appearance: {
-            roofStyle: 'rounded',
-            bodyColor: '#AEB0AD',
-            couplerWidthMultiplier: 1.5,
-            catenary: true
-        },
-        portalCost: 6000000,
-        rampCost: 2750000,
+        appearance: {roofStyle: 'rounded', bodyColor: '#AEB0AD'},
+        portalCost: 6_000_000,
+        rampCost: 2_750_000,
         gradeCrossingSpeedLimitApproachDistance: 50,
         maxOverpassSpan: 50,
     });
 })();
-
 
 // ============================================================
 // UNDERGROUND-ONLY CONSTRUCTION RESTRICTION
